@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  Reliable, efficient delivery
+  Powered by Technology
+
+  Our Artificial Intelligence powered tools use millions of project data points 
+  to ensure that your project is successful
+
+  Supervisor
+  Monitors activity to identify project roadblocks
+
+  Team Builder
+  Scans our talent network to create the optimal team for your project
+
+  Karma
+  Regularly evaluates our talent to ensure quality
+
+  Calculator
+  Uses data from past projects to provide better delivery estimates
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+    <style>
+
+
+        
+        .divider {
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(to right, #45d3d3, #549ef2);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid;
+            position: relative;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card.supervisor {
+            border-color: #45d3d3;
+        }
+        
+        .feature-card.team-builder {
+            border-color: #ea5353;
+        }
+        
+        .feature-card.karma {
+            border-color: #fcaf4a;
+        }
+        
+        .feature-card.calculator {
+            border-color: #549ef2;
+        }
+        
+        .feature-card h2 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: #4c4e61;
+        }
+        
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #a3a5ae;
+            margin-bottom: 30px;
+        }
+        
+        .feature-card .icon {
+            text-align: right;
+        }
+        
+        .feature-card .icon img {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .center-column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        @media (max-width: 900px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            
+            .center-column {
+                gap: 30px;
+            }
+        }
+    </style>
+</html>
